@@ -1,0 +1,98 @@
+{
+  "beginner": [
+    { "name": "Game setup",
+      "profile": "board_min.jpg",
+      "video_name": "https://www.youtube.com/watch?v=4nz-_hvFw44&t=665s",
+      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "jump_point": [
+        {"name": "Step 1 how to", "time": "72"},
+        {"name": "Step 2 how to", "time": "202"},
+        {"name": "Step 3 how to", "time": "312"}
+      ]
+    },
+    { "name": "Turn overview", 
+      "profile": "board_min.jpg",
+      "video_name": "https://www.youtube.com/watch?v=4nz-_hvFw44&t=665s",
+      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "jump_point": [
+        {"name": "Step 1 how to", "time": "72"},
+        {"name": "Step 2 how to", "time": "202"},
+        {"name": "Step 3 how to", "time": "312"}
+      ]
+    },
+    { "name": "Paying rent", 
+      "profile": "board_min.jpg",
+      "video_name": "https://www.youtube.com/watch?v=4nz-_hvFw44&t=665s",
+      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "jump_point": [
+        {"name": "Step 1 how to", "time": "72"},
+        {"name": "Step 2 how to", "time": "202"},
+        {"name": "Step 3 how to", "time": "312"}
+      ]
+    }
+  ],
+  "tactics": [
+    { "name": "How to win",
+      "profile": "board_min.jpg",
+      "video_name": "https://www.youtube.com/watch?v=4nz-_hvFw44&t=665s",
+      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "jump_point": [
+        {"name": "Step 1 how to", "time": "72"},
+        {"name": "Step 2 how to", "time": "202"},
+        {"name": "Step 3 how to", "time": "312"}
+      ]
+    },
+    { "name": "Buying", 
+      "profile": "board_min.jpg",
+      "video_name": "https://www.youtube.com/watch?v=4nz-_hvFw44&t=665s",
+      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "jump_point": [
+        {"name": "Step 1 how to", "time": "72"},
+        {"name": "Step 2 how to", "time": "202"},
+        {"name": "Step 3 how to", "time": "312"}
+      ]
+    },
+    { "name": "Selling", 
+      "profile": "board_min.jpg",
+      "video_name": "https://www.youtube.com/watch?v=4nz-_hvFw44&t=665s",
+      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "jump_point": [
+        {"name": "Step 1 how to", "time": "72"},
+        {"name": "Step 2 how to", "time": "202"},
+        {"name": "Step 3 how to", "time": "312"}
+      ]
+    }
+  ],
+  "variations": [
+    { "name": "Star World",
+      "profile": "board_min.jpg",
+      "video_name": "https://www.youtube.com/watch?v=4nz-_hvFw44&t=665s",
+      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "jump_point": [
+        {"name": "Step 1 how to", "time": "72"},
+        {"name": "Step 2 how to", "time": "202"},
+        {"name": "Step 3 how to", "time": "312"}
+      ]
+    },
+    { "name": "Mario", 
+      "profile": "board_min.jpg",
+      "video_name": "https://www.youtube.com/watch?v=4nz-_hvFw44&t=665s",
+      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "jump_point": [
+        {"name": "Step 1 how to", "time": "72"},
+        {"name": "Step 2 how to", "time": "202"},
+        {"name": "Step 3 how to", "time": "312"}
+      ]
+    },
+    { "name": "Dragan ball", 
+      "profile": "board_min.jpg",
+      "video_name": "https://www.youtube.com/watch?v=4nz-_hvFw44&t=665s",
+      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "jump_point": [
+        {"name": "Step 1 how to", "time": "72"},
+        {"name": "Step 2 how to", "time": "202"},
+        {"name": "Step 3 how to", "time": "312"}
+      ]
+    }
+  ]
+}

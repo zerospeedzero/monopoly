@@ -1,0 +1,106 @@
+import React, { useEffect, useRef, useState } from "react";
+import Script from "next/script";
+// import moduleData from '@/components/moduleData.json'
+import useSWR from 'swr'
+
+const fetcher = (key) => fetch(key).then((res) => res.json())
+
+const VideoPlayer = ({level, index, video_name}) => {
+  const [topic, setTopic] = useState(null)
+  const playerRef = useRef(null);
+  const handleSeek = (time) => {
+    if (playerRef.current) {
+      playerRef.current.seekTo(time);
+      playerRef.current.playVideo();
+    }
+  }
+  // const url = process.env.NEXT_PUBLIC_MODULE_DATA_URL
+  const url =  '/moduleData.json'
+  const {data, error, isLoading} = useSWR(url, fetcher)
+  // console.log(level)
+  // console.log(index)
+  // console.log(data[level][index].video_name)
+
+  // const data = moduleData[level][index]
+  // useEffect(() => {
+    // Load the YouTube Player API asynchronously
+    // const tag = document.createElement("script");
+    // tag.src = "https://www.youtube.com/player_api";
+    // const firstScriptTag = document.getElementsByTagName("script")[0];
+    // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    // Create a YouTube player when the API is ready
+    window.onYouTubePlayerAPIReady = () => {
+      playerRef.current = new window.YT.Player("youtube-player", {
+        width: '100%',
+        height: 'auto',
+        videoId: video_name,
+        playerVars: {
+          'cc_load_policy': 1,
+          'cc_lang_pref': 'en'
+        },
+        events: {
+          onReady: (event) => {
+            // event.target.setOption('captions', 'track', {languageCode: 'en'})
+            event.target.playVideo();
+          },
+          onApiChange: (event) => {
+            playerRef.current.setOption('captions', 'track', {languageCode: 'en'}) 
+          },
+          onStateChange: (event) => {
+            console.log('state is changed to ' + event)
+          }
+        },
+      });
+    };
+  // }, [data]);
+  return (
+    <>
+      <Script
+        id="myyoutubeid"
+        src="https://www.youtube.com/player_api"
+        strategy="lazyOnload"
+        onLoad={() =>
+            console.log(`script loaded correctly, window.FB has been populated`)
+        }
+      >       
+      </Script>
+      {isLoading ? (
+        <div>Loading</div>
+      ) : (
+        <>
+          <div className='pt-[100px] max-w-[1600px] mx-auto'>
+            <h2 className='p-4 text-3xl'>Topic: {data[level][index].name} [{level.charAt(0).toUpperCase() + level.slice(1)} module]</h2>
+            <div className='p-4 flex text-black w-full'>
+              <div className="w-full">
+                <div style={{ float: "left", width: "20%" }}>
+                  <div className="w-full flex flex-col justify-start">
+                    <h2 className="text-xl ml-4">Overview</h2>
+                    <p className="p-4 m-4 bg-green-400 rounded-lg">{data[level][index].description}</p>
+                    <h2 className="text-xl ml-4 mt-4">Jump to topics</h2>
+                    <div className="w-full flex flex-col justify-center items-center p-4">
+                      {data[level][index].jump_point.map((item, key) => (
+                        <span key={key} className={ (key == topic ? 'bg-blue-500 text-white'  : 'bg-blue-300 ') + ' w-full text-center  mb-4 p-4 rounded-lg hover:bg-yellow-300 hover:text-black hover:shadow-lg'} onClick={() => {handleSeek(item.time); setTopic(key)}} >{item.name}</span> 
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div className="relative  w-full"  style={{ float: "right", width: "70%" }}>
+                  <div
+                    className="absolute top-0 left-0 w-full aspect-video rounded-lg shadow-4xl"
+                    id="youtube-player"
+                    width="100%"
+                    height="auto"
+                  ></div>
+                </div>
+                <div style={{ clear: "both" }}></div>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+
+    </>
+  );
+};
+
+export default VideoPlayer;

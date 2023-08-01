@@ -1,0 +1,49 @@
+export const quiz = {
+  totalQuestions: 5,
+  questions: [
+    {
+      id: 1,
+      question: 'What is the capital of France?',
+      answers: ['Madrid', 'Paris', 'Rome', 'Berlin'],
+      correctAnswer: 'Paris',
+    },
+    {
+      id: 2,
+      question: 'What is the largest planet in our solar system?',
+      answers: ['Mars', 'Jupiter', 'Venus', 'Saturn'],
+      correctAnswer: 'Jupiter',
+      qimage: 'board_min.jpg'
+    },
+    {
+      id: 3,
+      question: 'What is the smallest country in the world?',
+      answers: ['Monaco', 'Maldives', 'Vatican City', 'San Marino'],
+      correctAnswer: 'Vatican City',
+    },
+    {
+      id: 4,
+      question: 'Please choose the correct menu sequence.',
+      answers: ['A,B,C,D', 'D,C,B,A', 'C,A,D,B', 'D,B,C,A'],
+      correctAnswer: 'C,A,D,B',
+      sequence: ['A. Modules', 'B. GPT', 'C. Home', 'D. Q&A']
+    },
+    {
+      id: 5,
+      question: 'What is the most widely spoken language in the world?',
+      answers: ['English', 'Mandarin', 'Spanish', 'Hindi'],
+      correctAnswer: 'Mandarin',
+    },
+    {
+      id: 6,
+      question: 'SAIT will provide NMPD programme in 2024',
+      answers: ['True', 'False'],
+      correctAnswer: 'False',
+    },
+    {
+      id: 7,
+      question: 'Who is the founder of Microsoft?',
+      answers: ['Steve Jobs', 'Bill Gates', 'Elon Musk', 'Mark Zuckerberg'],
+      correctAnswer: 'Bill Gates',
+    },
+  ],
+};
