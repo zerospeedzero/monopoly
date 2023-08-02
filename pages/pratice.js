@@ -8,8 +8,7 @@ const testing = () => {
         height="auto" 
         title="Copy of Palette" 
         scrolling="no" 
-        frameborder="0" 
-        webkitallowfullscreen mozallowfullscreen allowfullscreen
+        frameBorder="0" 
       >
     </iframe>
     </div>
