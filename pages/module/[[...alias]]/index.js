@@ -18,10 +18,10 @@ const Detail = () => {
   return (
     <>
       {router.query.alias != undefined && router.query.alias[2] == 'video' ? (
-        <VideoPlayer level={router.query.alias[0]} index={router.query.alias[1]} video_name={router.query.alias[3]}/>
+        <VideoPlayer level={router.query.alias[0]} index={router.query.alias[1]} video_name={router.query.alias[3]} link={router.asPath}/>
       ) : (null)}
       {router.query.alias != undefined && router.query.alias[2] == 'slide' ? (
-        <Slide level={router.query.alias[0]} index={router.query.alias[1]} slide_name={router.query.alias[3]}/>
+        <Slide level={router.query.alias[0]} index={router.query.alias[1]} slide_name={router.query.alias[3]} link={router.asPath}/>
       ) : (null)}
       {router.query.alias != undefined && router.query.alias[2] == 'quiz' ? (
         <Quiz level={router.query.alias[0]} index={router.query.alias[1]} module={router.query.alias[3]} link={router.asPath}/>

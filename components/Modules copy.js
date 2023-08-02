@@ -27,8 +27,8 @@ export default function Modules() {
   //   });
   // },[])
   const handleClick = (link,type) => {
-    // if (type != 'quiz')
-    //   markLinkAsVisited(link);
+    if (type != 'quiz')
+      markLinkAsVisited(link);
   };
 
   const module_link = (level, module, index) => {
@@ -44,11 +44,11 @@ export default function Modules() {
           <h2 className='p-4 text-3xl'>Beginner module</h2>
           <div className='flex text-black'>
             {data.beginner.map((module, index) => (
-              <Link key={index} href={module_link('beginner', module, index)} class='tick-icon'
-                onClick={() => handleClick(module_link('beginner', module, index), module.type)}
+              <Link key={index} href={"/module/beginner/" + index + "/" + module.type + "/" + module.video_name } class='tick-icon'
+                onClick={() => handleClick("/module/beginner/" + index + "/" + module.type + "/" + module.video_name, module.type)}
               >
                 <Module item={module} index={index}
-                  isLinkVisited={isLinkVisited(module_link('beginner', module, index))}
+                  isLinkVisited={isLinkVisited("/module/beginner/" + index + "/" + module.type + "/" + module.video_name)}
                 />            
               </Link>
             ))}  
@@ -56,11 +56,11 @@ export default function Modules() {
           <h2 className='p-4 text-3xl'>Tactics module</h2>
           <div className='flex text-black'>
             {data.tactics.map((module, index) => (
-              <Link key={index} href={module_link('tactics', module, index)} class='tick-icon'
-                onClick={() => handleClick(module_link('tactics', module, index), module.type)}
+              <Link key={index} href={"/module/tactics/" + index + "/" + module.type + "/" + module.video_name} class='tick-icon'
+                onClick={() => handleClick("/module/tactics/" + index + "/" + module.type + "/" + module.video_name, module.type)}
               >
                 <Module item={module} index={index}
-                  isLinkVisited={isLinkVisited(module_link('tactics', module, index))}
+                  isLinkVisited={isLinkVisited("/module/tactics/" + index + "/" + module.type + "/" + module.video_name)}
                 />            
               </Link>
             ))}  
@@ -68,11 +68,11 @@ export default function Modules() {
           <h2 className='p-4 text-3xl'>Variations of Monopoly</h2>
           <div className='flex text-black'>
             {data.variations.map((module, index) => (
-              <Link key={index} href={module_link('variations', module, index)} class='tick-icon'
-                onClick={() => handleClick(module_link('variations', module, index), module.type)}
+              <Link key={index} href={"/module/variations/" + index + "/" + module.type + "/" + module.video_name} class='tick-icon'
+                onClick={() => handleClick("/module/variations/" + index + "/" + module.type + "/" + module.video_name, module.type)}
               >
                 <Module item={module} index={index}
-                  isLinkVisited={isLinkVisited(module_link('variations', module, index))}
+                  isLinkVisited={isLinkVisited("/module/variations/" + index + "/" + module.type + "/" + module.video_name)}
                 />            
               </Link>
             ))}  

@@ -2,10 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import YouTube from 'react-youtube';
 import useSWR from 'swr'
 import Link from "next/link";
+import { isLinkVisited, markLinkAsVisited } from '@/components/LinkTracker';
 
 const fetcher = (key) => fetch(key).then((res) => res.json())
 
-const VideoPlayer = ({level, index, video_name}) => {
+const VideoPlayer = ({level, index, video_name, link}) => {
   const [topic, setTopic] = useState(null)
 
   const playerRef = useRef(null);
@@ -26,12 +27,17 @@ const VideoPlayer = ({level, index, video_name}) => {
     playerRef.current.setOption('captions', 'track', {languageCode: 'en'}) 
   }
 
+  const onEnd = () => {
+    console.log('topic is end')
+    markLinkAsVisited(link)
+  }
   const handleSeek = (time) => {
     const player = playerRef.current;
     if (player && typeof player.seekTo === 'function') {
       player.seekTo(time);
     }
   };
+
   
   const url =  '/moduleData.json'
   const {data, error, isLoading} = useSWR(url, fetcher)
@@ -60,7 +66,7 @@ const VideoPlayer = ({level, index, video_name}) => {
                 </div>
               </div>
               <div className="relative  w-full"  style={{ float: "right", width: "70%" }}>
-                <YouTube videoId={video_name} opts={opts} onReady={onReady} onPlay={onPlay}
+                <YouTube videoId={video_name} opts={opts} onReady={onReady} onPlay={onPlay} onEnd={onEnd}
                   className="absolute top-0 left-0 w-full aspect-video rounded-lg shadow-4xl pr-4"
                 />
               </div>
