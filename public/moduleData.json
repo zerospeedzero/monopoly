@@ -1,6 +1,6 @@
 {
   "beginner": [
-    { "name": "Game setup",
+    { "name": "How to play",
       "type": "video",
       "profile": "board_min.jpg",
       "video_name": "4nz-_hvFw44",
@@ -8,18 +8,10 @@
       "jump_point": [
         {"name": "Step 1 how to", "time": "72"},
         {"name": "Step 2 how to", "time": "202"},
-        {"name": "Step 3 how to", "time": "312"}
-      ]
-    },
-    { "name": "Turn overview", 
-      "type": "video",
-      "profile": "board_min.jpg",
-      "video_name": "In-dkrXX4Yo",
-      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
-      "jump_point": [
-        {"name": "Step 1 how to", "time": "72"},
-        {"name": "Step 2 how to", "time": "202"},
-        {"name": "Step 3 how to", "time": "312"}
+        {"name": "Step 3 how to", "time": "312"},
+        {"name": "Step 4 how to", "time": "312"},
+        {"name": "Step 5 how to", "time": "312"},
+        {"name": "Step 6 how to", "time": "312"}
       ]
     },
     { "name": "Beginner quiz", 
@@ -30,7 +22,7 @@
     }
   ],
   "tactics": [
-    { "name": "How to win",
+    { "name": "Resource Optimization",
       "type": "slide",
       "profile": "board_min.jpg",
       "video_name": "deck",
@@ -41,7 +33,7 @@
         {"name": "Step 3 how to", "time": "312"}
       ]
     },
-    { "name": "Buying", 
+    { "name": "Late Game Strategies", 
       "type": "slide",
       "profile": "board_min.jpg",
       "video_name": "palette",
@@ -65,7 +57,7 @@
     }
   ],
   "variations": [
-    { "name": "Star World",
+    { "name": "Animal Crossing Monopoly",
       "type": "video",
       "profile": "board_min.jpg",
       "video_name": "s-r38R6jtgk",
@@ -76,7 +68,18 @@
         {"name": "Step 3 how to", "time": "312"}
       ]
     },
-    { "name": "Mario", 
+    { "name": "Monopoly Speed", 
+      "type": "video",
+      "profile": "board_min.jpg",
+      "video_name": "TFnGt2MmSIM",
+      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "jump_point": [
+        {"name": "Step 1 how to", "time": "72"},
+        {"name": "Step 2 how to", "time": "202"},
+        {"name": "Step 3 how to", "time": "312"}
+      ]
+    },
+    { "name": "Monopoly Plus", 
       "type": "video",
       "profile": "board_min.jpg",
       "video_name": "TFnGt2MmSIM",
