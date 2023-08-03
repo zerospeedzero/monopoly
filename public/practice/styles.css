@@ -86,7 +86,7 @@ td {
 #control {
 	position: absolute;
 	z-index: 9;
-	top: 250px;
+	top: 200px;
 	left: 250px;
 	border: 2px solid black;
 	padding: 10px;
@@ -100,6 +100,7 @@ td {
 	font-family: arial, sans-serif;
 	border: 2px solid blue;
 	margin: 5px;
+	margin-top: 0px;
 	padding: 3px;
 	width: 80px;
 }
@@ -240,7 +241,7 @@ td {
 #menu {
 	width: 290px;
 	height: 32px;
-	margin: 0px 10px;
+	margin: 0px auto;
 }
 
 #menutable {
@@ -827,7 +828,7 @@ td {
 
 }
 #quickstats div span {background-color: transparent; color: white;}
-#quickstats div {color: white;}
+#quickstats div {color: white; margin-top:0rem !important;}
 #setup {display:flex; flex-direction: column; justify-content: center; align-items: center; width: 95vw; height:60vh;}
 .menu-item {background-color: rgb(59 130 246);}
 #player1color, #player2color, #number_of_players, #player1input, #player2input  {display:none !important;}
@@ -837,3 +838,8 @@ td {
 #startgame {font-size: 1rem; width: 8rem; padding:1rem; background-color: rgba(111,155, 241,1); color:#FFFFFF; border: none; border-radius: 5px;}
 #startgame:hover {background-color: rgba(107,199, 112,1); color:black;}
 /* body {background-color: white; opacity: 0.8;} */
+input[type=button] {background-color: rgba(111,155, 241,1); color: white; padding: 0.5rem; border: none; border-radius: 3px; margin:0.5rem;}
+#viewstats {width:105px; margin:0px;}
+#alert {min-height: 150px; padding: 0.5rem; border: 1px solid rgba(111,155, 241,1); border-radius: 3px;}
+#control {min-height: 300px; border: 3px solid rgba(111,155, 241,1); ;border-radius: 3px;}
+.cell-position {background-color: black;}

@@ -1,6 +1,6 @@
-const interval = setInterval(function() {
-		$("#popupclose").click()
-}, 5000);
+// const interval = setInterval(function() {
+// 		$("#popupclose").click()
+// }, 5000);
 
 function Game() {
 	var die1;
