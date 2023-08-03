@@ -91,7 +91,7 @@ const Page = ({module, link}) => {
           <div className="flex flex-col justify-center items-center"></div>
 
             <div className='max-w-[1000px] mx-auto p-8 flex flex-col justify-start items-center h-screen'>
-              <h1 className='text-3xl'>Quiz Page</h1>
+              <h1 className='text-3xl mb-4'>Quiz Page</h1>
               <div className='pb-4'>
                 <h2 className='text-2xl'>
                   Question: {activeQuestion + 1}

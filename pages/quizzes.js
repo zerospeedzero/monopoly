@@ -23,10 +23,10 @@ export default function Quizzes() {
           <h2 className='text-4xl'>Quiz</h2>
           <div className='pt-[90px] max-w-[1000px] mx-auto flex flex-row justify-center items-center'>
             <div className='flex text-black'>
-              <Link href={"/module/beginner/2/quiz/beginner"} class='tick-icon'
+              <Link href={"/module/beginner/1/quiz/beginner"} class='tick-icon'
               >
-                <Module item={data.beginner[2]} index={2}
-                  isLinkVisited={isLinkVisited("/module/beginner/2/quiz/beginner")}
+                <Module item={data.beginner[1]} index={1}
+                  isLinkVisited={isLinkVisited("/module/beginner/1/quiz/beginner")}
                 />            
               </Link>
             </div>
@@ -39,10 +39,10 @@ export default function Quizzes() {
                 </Link>
             </div>
             <div className='flex text-black'>
-                <Link  href={"/module/variations/2/quiz/variations"} class='tick-icon'
+                <Link  href={"/module/variations/3/quiz/variations"} class='tick-icon'
                 >
-                  <Module item={data.variations[2]} index={2}
-                    isLinkVisited={isLinkVisited("/module/variations/2/quiz/variations")}
+                  <Module item={data.variations[3]} index={3}
+                    isLinkVisited={isLinkVisited("/module/variations/3/quiz/variations")}
                   />            
                 </Link>
             </div>

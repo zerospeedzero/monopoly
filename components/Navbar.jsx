@@ -39,8 +39,8 @@ const Navbar = () => {
         <div className='w-full absolute top-0 left-0'>
           <div className='flex justify-between items-center p-4'>
             <Link href='/'>
-              <motion.img className="w-[200px] h-[auto]" width={200} height={50} src="/logo2.png"
-                initial={{scale:0, opacity: 1}} animate={{rotate: 360, scale:1, opacity:1}} transition={{type: 'spring',duration: 2, delay: 4}}     
+              <img className="w-[200px] h-[auto]" width={200} height={50} src="/logo2.png"
+                // initial={{scale:0, opacity: 1}} animate={{rotate: 360, scale:1, opacity:1}} transition={{type: 'spring',duration: 2, delay: 4}}     
               />
             </Link>
             <motion.ul className='hidden sm:flex'

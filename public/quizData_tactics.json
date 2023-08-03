@@ -1,37 +1,65 @@
 {
-  "totalQuestions": 5,
+  "totalQuestions": 10,
   "questions": [
     {
       "id": "1",
-      "question": "What is the capital of France?",
-      "answers": ["Madrid", "Paris", "Rome", "Berlin"],
-      "correctAnswer": "Paris"
+      "question": "What should you be doing as soon as possible?",
+      "answers": ["Going to Jail", "Completing a Property Set", "Making Trades", "Obtain all Four Railroads"],
+      "correctAnswer": "Completing a Property Set"
     },
     {
       "id": "2",
-      "question": "What is the largest planet in our solar system?",
-      "answers": ["Mars", "Jupiter", "Venus", "Saturn"],
-      "correctAnswer": "Jupiter",
-      "qimage": "board_min.jpg"
+      "question": "Which of these colors is it more likely to land on?",
+      "answers": ["Green", "Brown", "Teal", "Orange"],
+      "correctAnswer": "Orange"
     },
     {
       "id": "3",
-      "question": "What is the smallest country in the world?",
-      "answers": ["Monaco", "Maldives", "Vatican City", "San Marino"],
-      "correctAnswer": "Vatican City"
+      "question": "With all of the properties claimed with houses or hotels built on them, and you are in jail. It is safer to get out of jail as quickly as you can.",
+      "answers": ["True", "False"],
+      "correctAnswer": "False"
     },
     {
       "id": "4",
-      "question": "Please choose the correct menu sequence.",
-      "answers": ["A,B,C,D", "D,C,B,A", "C,A,D,B", "D,B,C,A"],
-      "correctAnswer": "C,A,D,B",
-      "sequence": ["A. Modules", "B. GPT", "C. Home", "D. Q&A"]
+      "question": "How many houses should you build on a property as soon as possible?",
+      "answers": ["3", "4", "2", "1"],
+      "correctAnswer": "3"
     },
     {
       "id": "5",
-      "question": "SAIT will provide NMPD programme in 2024",
+      "question": "Hotels and Utilities are not efficient.",
       "answers": ["True", "False"],
       "correctAnswer": "False"
+    },
+    {
+      "id": "6",
+      "question": "All properties are taken and your opponent is in jail. What should you do after you move for your turn?",
+      "answers": ["Build mores houses or upgrade to a Hotel", "Save money in case you land on a opposing tile", "Trade your property for better ones", "Stop playing the game because you have already won"],
+      "correctAnswer": "Save money in case you land on a opposing tile"
+    },
+    {
+      "id": "7",
+      "question": "A property owner must ask for rent, if they don’t, you are not required to pay.",
+      "answers": ["True", "False"],
+      "correctAnswer": "False"
+    },
+    {
+      "id": "8",
+      "question": "What is the maximum number of available houses in a game?",
+      "answers": ["34", "30", "32","None of the above"],
+      "correctAnswer": "32"
+    },
+    {
+      "id": "9",
+      "question": "Which of these colors is it more likely to land on?",
+      "answers": ["Blue", "Magenta", "Yellow", "Red"],
+      "correctAnswer": "Red"
+    },
+    {
+      "id": "10",
+      "question": "Which of these colors is it more likely to land on?",
+      "answers": ["Red", "Orange", "A and B are correct", "Green"],
+      "correctAnswer": "A and B are correct"
     }
   ]
 }

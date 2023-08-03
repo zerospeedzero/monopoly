@@ -1,49 +1,95 @@
 {
-  "totalQuestions": 7,
+  "totalQuestions": 15,
   "questions": [
     {
       "id": "1",
-      "question": "What is the capital of France?",
-      "answers": ["Madrid", "Paris", "Rome", "Berlin"],
-      "correctAnswer": "Paris"
+      "question": "What is this card?",
+      "answers": ["Community Chest Card", "Title Deed Card", "Chance Card", "Get out of Jail Card"],
+      "correctAnswer": "Chance Card"
     },
     {
       "id": "2",
-      "question": "What is the largest planet in our solar system?",
-      "answers": ["Mars", "Jupiter", "Venus", "Saturn"],
-      "correctAnswer": "Jupiter",
-      "qimage": "board_min.jpg"
+      "question": "What happens if the turn player does not purchase the property space they land on?",
+      "answers": ["Auction", "Trading", "Go to Jail", "Pay Rent"],
+      "correctAnswer": "Auction"
     },
     {
       "id": "3",
-      "question": "What is the smallest country in the world?",
-      "answers": ["Monaco", "Maldives", "Vatican City", "San Marino"],
-      "correctAnswer": "Vatican City"
+      "question": "How do you win the game?",
+      "answers": ["Have the most money after 20 turns", "Be the first to have no money", "Build 3 Hotels", "Be the last player with money left"],
+      "correctAnswer": "Be the last player with money left"
     },
     {
       "id": "4",
-      "question": "Please choose the correct menu sequence.",
-      "answers": ["A,B,C,D", "D,C,B,A", "C,A,D,B", "D,B,C,A"],
-      "correctAnswer": "C,A,D,B",
-      "sequence": ["A. Modules", "B. GPT", "C. Home", "D. Q&A"]
+      "question": "What do you do when you want to mortgage a property?",
+      "answers": ["Give it to another player", "The bank will take the property", "Flip the title deed card face down and receive money stated", "Perform a break dance"],
+      "correctAnswer": "Flip the title deed card face down and receive money stated"
     },
     {
       "id": "5",
-      "question": "What is the most widely spoken language in the world?",
-      "answers": ["English", "Mandarin", "Spanish", "Hindi"],
-      "correctAnswer": "Mandarin"
+      "question": "How many Railroads are there?",
+      "answers": ["3", "4", "1", "2"],
+      "correctAnswer": "4"
     },
     {
       "id": "6",
-      "question": "SAIT will provide NMPD programme in 2024",
+      "question": "Rent is declared by whoever owns it.",
       "answers": ["True", "False"],
       "correctAnswer": "False"
     },
     {
       "id": "7",
-      "question": "Who is the founder of Microsoft?",
-      "answers": ["Steve Jobs", "Bill Gates", "Elon Musk", "Mark Zuckerberg"],
-      "correctAnswer": "Bill Gates"
+      "question": "What happens when you pass Go?",
+      "answers": ["The bank will give you $200", "You go to Jail", "Give the player on the right $50", "Recieve a high-five"],
+      "correctAnswer": "The bank will give you $200"
+    },
+    {
+      "id": "8",
+      "question": "Which of these are NOT a way to go to jail in Monopoly?",
+      "answers": ["Chance Card", "Landing on Go to Jail", "Rolling 3 doubles in a row", "Slapping the player to your left"],
+      "correctAnswer": "Slapping the player to your left"
+    },
+    {
+      "id": "9",
+      "question": "What should you do when a player lands on property you own?",
+      "answers": ["Ask the banker for money", "Trade properties with that player", "Ask for rent", "Dab that player up"],
+      "correctAnswer": "Ask for rent"
+    },
+    {
+      "id": "10",
+      "question": "When can you make deals and build houses?",
+      "answers": ["After passing Go", "Anytime", "Going to Jail", "Landing on another player’s property"],
+      "correctAnswer": "Anytime"
+    },
+    {
+      "id": "11",
+      "question": "There are Three different types of properties.",
+      "answers": ["True", "False"],
+      "correctAnswer": "False"
+    },
+    {
+      "id": "12",
+      "question": "When are you bankrupt?",
+      "answers": ["Going to Jail three times", "Build 4 Hotels", "Having no money", "Passing Go 7 Times"],
+      "correctAnswer": "Having no money"
+    },
+    {
+      "id": "13",
+      "question": "What is this card??",
+      "answers": ["Community Chest Card", "Title Deed Card", "Get out of Jail Card", "Chance Card"],
+      "correctAnswer": "Get out of Jail Card"
+    },
+    {
+      "id": "14",
+      "question": "You cannot make another roll after rolling doubles on dice.",
+      "answers": ["True", "False"],
+      "correctAnswer": "False"
+    },
+    {
+      "id": "15",
+      "question": "When can you buy houses for your properties? ",
+      "answers": ["After collecting a Railroad", "Passing Go", "Having 2 different colors of property", "Owning an entire set of a color"],
+      "correctAnswer": "Owning an entire set of a color"
     }
   ]
 }

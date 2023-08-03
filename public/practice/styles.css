@@ -1,5 +1,5 @@
 body {
-	background: #FFFFFF;
+	background: rgba(255,255,255, 0.9);
 	margin: 0px;
 	min-width: 1075px;
 }
@@ -830,4 +830,10 @@ td {
 #quickstats div {color: white;}
 #setup {display:flex; flex-direction: column; justify-content: center; align-items: center; width: 95vw; height:60vh;}
 .menu-item {background-color: rgb(59 130 246);}
-#player1color, #player2color, #number_of_players {display:none;}
+#player1color, #player2color, #number_of_players, #player1input, #player2input  {display:none !important;}
+#setup {position:absolute; top: 10%;}
+#setup h2 {font-size: 2rem;}
+#noF5 {width: 40rem; margin: 0 auto; line-height: 1.5;}
+#startgame {font-size: 1rem; width: 8rem; padding:1rem; background-color: rgba(111,155, 241,1); color:#FFFFFF; border: none; border-radius: 5px;}
+#startgame:hover {background-color: rgba(107,199, 112,1); color:black;}
+/* body {background-color: white; opacity: 0.8;} */

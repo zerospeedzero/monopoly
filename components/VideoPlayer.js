@@ -56,7 +56,7 @@ const VideoPlayer = ({level, index, video_name, link}) => {
                   <h2 className="text-xl ml-4 mt-4">Jump to subtopics</h2>
                   <div className="w-full flex flex-wrap justify-center items-center">
                     {data[level][index].jump_point.map((item, key) => (
-                      <span key={key} className={ (key == topic ? 'bg-blue-500 text-white'  : 'bg-blue-300 ') + 'w-[8.3rem] text-center m-4  p-4 rounded-lg hover:bg-yellow-300 hover:text-black hover:shadow-lg'} onClick={() => {handleSeek(item.time); setTopic(key)}} 
+                      <span key={key} className={ (key == topic ? 'bg-blue-500 text-white '  : 'bg-blue-300 ') + 'w-[8.3rem] text-center m-4  p-4 rounded-lg hover:bg-yellow-300 hover:text-black hover:shadow-lg'} onClick={() => {handleSeek(item.time); setTopic(key)}} 
                       >
                         {item.name}
                       </span> 

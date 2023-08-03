@@ -42,7 +42,7 @@ export default function Modules() {
       ) : (
         <div className='pt-[90px] max-w-[1000px] mx-auto'>
           <h2 className='p-4 text-3xl'>Beginner module</h2>
-          <div className='flex flex-wrap text-black'>
+          <div className='flex flex-wrap justify-center text-black'>
             {data.beginner.map((module, index) => (
               <Link key={index} href={module_link('beginner', module, index)} class='tick-icon'
                 onClick={() => handleClick(module_link('beginner', module, index), module.type)}
@@ -54,7 +54,7 @@ export default function Modules() {
             ))}  
           </div>
           <h2 className='p-4 text-3xl'>Tactics module</h2>
-          <div className='flex flex-wrap text-black'>
+          <div className='flex flex-wrap justify-center text-black'>
             {data.tactics.map((module, index) => (
               <Link key={index} href={module_link('tactics', module, index)} class='tick-icon'
                 onClick={() => handleClick(module_link('tactics', module, index), module.type)}

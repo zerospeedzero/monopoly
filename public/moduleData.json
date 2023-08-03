@@ -2,7 +2,7 @@
   "beginner": [
     { "name": "How to play",
       "type": "video",
-      "profile": "board_min.jpg",
+      "profile": "topic1.png",
       "video_name": "4nz-_hvFw44",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
       "jump_point": [
@@ -16,7 +16,7 @@
     },
     { "name": "Beginner quiz", 
       "type": "quiz",
-      "profile": "board_min.jpg",
+      "profile": "topic1_400px.png",
       "video_name": "beginner",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video"
     }
@@ -24,7 +24,7 @@
   "tactics": [
     { "name": "Resource Optimization",
       "type": "slide",
-      "profile": "board_min.jpg",
+      "profile": "topic1_400px.png",
       "video_name": "deck",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
       "jump_point": [
@@ -35,7 +35,7 @@
     },
     { "name": "Late Game Strategies", 
       "type": "slide",
-      "profile": "board_min.jpg",
+      "profile": "topic1_400px.png",
       "video_name": "palette",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
       "jump_point": [
@@ -46,7 +46,7 @@
     },
     { "name": "Tactics quiz", 
       "type": "quiz",
-      "profile": "board_min.jpg",
+      "profile": "topic1_400px.png",
       "video_name": "tactics",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
       "jump_point": [
@@ -59,7 +59,7 @@
   "variations": [
     { "name": "Animal Crossing Monopoly",
       "type": "video",
-      "profile": "board_min.jpg",
+      "profile": "topic1_400px.png",
       "video_name": "s-r38R6jtgk",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
       "jump_point": [
@@ -70,7 +70,7 @@
     },
     { "name": "Monopoly Speed", 
       "type": "video",
-      "profile": "board_min.jpg",
+      "profile": "topic1_400px.png",
       "video_name": "TFnGt2MmSIM",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
       "jump_point": [
@@ -81,7 +81,7 @@
     },
     { "name": "Monopoly Plus", 
       "type": "video",
-      "profile": "board_min.jpg",
+      "profile": "topic1_400px.png",
       "video_name": "TFnGt2MmSIM",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
       "jump_point": [
@@ -92,7 +92,7 @@
     },
     { "name": "Variations quiz", 
       "type": "quiz",
-      "profile": "board_min.jpg",
+      "profile": "topic1_400px.png",
       "video_name": "variations",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
       "jump_point": [
