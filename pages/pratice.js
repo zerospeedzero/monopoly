@@ -19,7 +19,7 @@ const testing = () => {
     <div className="w-full flex flex-col justify-center items-center mt-[100px]">
       <div className='relative w-[1000px]'>
         <Link className="absolute top-[80%] left-[calc(46%)]" href="/" onClick={console.log('start game')}>     
-          <span className={'w-[18rem] bg-blue-500 text-white text-center  p-2 rounded-lg hover:bg-yellow-300 hover:text-black hover:shadow-lg'}>Return</span>
+          <span className={'w-[18rem] bg-blue-500 text-white text-center  p-2 rounded-md hover:bg-yellow-300 hover:text-black hover:shadow-lg'}>Return</span>
         </Link>
         {/* <span className={'absolute top-[80%] left-[calc(66%)]  w-[18rem] bg-blue-500 text-white text-center  p-2 rounded-lg hover:bg-yellow-300 hover:text-black hover:shadow-lg'}
           onClick={()=>{maximizeIframe()}}

@@ -299,7 +299,7 @@ td {
 	text-align: center;
 	word-wrap: break-word;
 	line-height: 1.5;
-	border: 2px solid black;
+	border: 2px solid rgba(111,155, 241,1);
 	border-radius: 10px;
 	background-color: white;
 	display: block;
