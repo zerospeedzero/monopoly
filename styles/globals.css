@@ -21,7 +21,7 @@ body {font-family: 'Sen', Helvetica, sans-serif; background-color: rgba(203,203,
 
 .board-image {
   background-image: url('../public/board_min.jpg');
-  background-size: cover;
+  background-size: 300px 300px;
   background-repeat: no-repeat;
 }
 

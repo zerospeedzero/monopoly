@@ -24,7 +24,7 @@
   "tactics": [
     { "name": "Resource Optimization",
       "type": "slide",
-      "profile": "topic1_400px.png",
+      "profile": "iron.png",
       "video_name": "deck",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
       "jump_point": [
