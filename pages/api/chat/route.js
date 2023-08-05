@@ -9,16 +9,16 @@ export const runtime = "experimental-edge";
 export default async function handler(req, res) {
   // Extract the `messages` from the body of the request
   const { messages } = await req.json();
-  console.log(messages)
+  // console.log(messages)
   const messagesWithCustomData = await injectCustomData(messages);
-  console.log(messagesWithCustomData)
+  // console.log(messagesWithCustomData)
   // Request the OpenAI API for the response based on the prompt
   const response = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
     stream: true,
     messages: messagesWithCustomData,
   });
-  console.log(response)
+  // console.log(response)
   // Convert the response into a friendly text-stream
   const stream = OpenAIStream(response);
 

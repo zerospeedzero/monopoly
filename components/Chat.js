@@ -8,12 +8,12 @@ export default function MyComponent() {
   });
 
   return (
-    <div className="bg-gray-100 p-4 rounded shadow-md m-auto w-full">
+    <div className="bg-gray-100 h-[calc(100vh-200px)] p-8 overflow-y-scroll flex flex-col justify-end rounded shadow-md m-auto w-full">
       <ul className="space-y-2">
         {messages.map((m, index) => (
           <li key={index} className="p-2 rounded bg-white shadow text-gray-700">
             <span className="font-semibold">
-              {m.role === "user" ? "User: " : "AI Assistant: "}
+              {m.role === "user" ? "User: " : "GPT: "}
             </span>
             {m.content}
           </li>
