@@ -7,9 +7,9 @@ const splitter = new RecursiveCharacterTextSplitter({
   chunkOverlap: 100,
 });
 
-const URL_EXAMPLE = "https://www.swstock.com";
-
+const URL_EXAMPLE = "http://dev.saitnewmedia.ca/~gcheng/monopoly/train_data.html";
 export const getDocuments = async () => {
+  console.log("inside")
   const loader = new PuppeteerWebBaseLoader(URL_EXAMPLE);
   console.info(`Getting URL from ${URL_EXAMPLE}`);
   const docs = await loader.load();

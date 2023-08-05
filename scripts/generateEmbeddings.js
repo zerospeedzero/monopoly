@@ -1,8 +1,6 @@
-// scripts/generateEmbeddings.ts
-
-import { getDocuments } from "./getDocuments";
-import { openai } from "../utils/openai";
-import { supabase } from "../utils/supabase";
+import { getDocuments } from "./getDocuments.js";
+import { openai } from "../utils/openai.js";
+import { supabase } from "../utils/supabase.js";
 
 export async function generateEmbeddings() {
   const documents = await getDocuments(); // Your custom function to load docs
@@ -16,6 +14,8 @@ export async function generateEmbeddings() {
           input,
         })
       ).json();
+      await new Promise(r => setTimeout(r, 30000));
+      console.log(embeddingResponse)
       const [{ embedding }] = embeddingResponse.data;
       // In production we should handle possible errors
       await supabase.from("documents").insert({

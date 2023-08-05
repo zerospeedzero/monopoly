@@ -1,31 +1,66 @@
 {
-  "totalQuestions": 4,
+  "totalQuestions": 10,
   "questions": [
     {
       "id": "1",
-      "question": "What is the capital of France?",
-      "answers": ["Madrid", "Paris", "Rome", "Berlin"],
-      "correctAnswer": "Paris"
+      "question": "The first three questions are relating to Animal Crossing Monopoly. How do you win?",
+      "answers": ["Sell 20 materials", "Buy 7 pieces of furniture", "Highest Nook Mile total", "Collect 10 of each material"],
+      "correctAnswer": "Highest Nook Mile total"
     },
     {
       "id": "2",
-      "question": "What is the largest planet in our solar system?",
-      "answers": ["Mars", "Jupiter", "Venus", "Saturn"],
-      "correctAnswer": "Jupiter",
-      "qimage": "board_min.jpg"
+      "question": "How many pieces of furniture are on the board at once in Animal Crossing Monopoly?",
+      "answers": ["3", "1", "5", "4"],
+      "correctAnswer": "3"
+    },
+    {
+      "id": "3",
+      "question": "Skill cards are acquired by buying furniture.",
+      "answers": ["False", "True"],
+      "correctAnswer": "False"
     },
     {
       "id": "4",
-      "question": "Please choose the correct menu sequence.",
-      "answers": ["A,B,C,D", "D,C,B,A", "C,A,D,B", "D,B,C,A"],
-      "correctAnswer": "C,A,D,B",
-      "sequence": ["A. Modules", "B. GPT", "C. Home", "D. Q&A"]
+      "question": "The next four questions are relating to Monopoly Speed. Your turn ends after you roll?",
+      "answers": ["True", "False"],
+      "correctAnswer": "True"
+    },
+    {
+      "id": "5",
+      "question": "How do you win?",
+      "answers": ["Having the most property", "Completing the community chests", "Having the highest total of money", "Reaching $20,000"],
+      "correctAnswer": "Having the highest total of money"
     },
     {
       "id": "6",
-      "question": "SAIT will provide NMPD programme in 2024",
+      "question": "What can chance cards do? Select all that apply.",
+      "answers": ["a and b", "a, c and d", "c and d", "All the above"],
+      "sequence": ["a) Block a single opposing chance card from another player", "b) Gift free money to the player", "c) Force a player to put a selected property back onto the board", "d) Steal a property from a selected player"],
+      "correctAnswer": "a, c and d"
+    },
+    {
+      "id": "7",
+      "question": "What is given to you at the beginning of the game?",
+      "answers": ["Chance Cards", "Community Chest Cards", "Properties", "Clocks"],
+      "correctAnswer": "Community Chest Cards"
+    },
+    {
+      "id": "8",
+      "question": "The next three questions are relating to Monopoly Plus. Who released Monopoly Plus?",
+      "answers": ["Ubisoft", "Nintendo", "Blizzard", "EA"],
+      "correctAnswer": "Ubisoft"
+    },
+    {
+      "id": "9",
+      "question": "You may choose from ONLY preset rules.",
       "answers": ["True", "False"],
       "correctAnswer": "False"
+    },
+    {
+      "id": "10",
+      "question": "What do you need in order to play?",
+      "answers": ["A wife", "A licensed physician", "Paper", "Internet"],
+      "correctAnswer": "Internet"
     }
   ]
 }
