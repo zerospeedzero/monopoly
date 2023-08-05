@@ -4,7 +4,7 @@ import { useChat } from "ai/react";
 
 export default function MyComponent() {
   const { messages, input, handleInputChange, handleSubmit } = useChat({
-    api: "/api/chat",
+    api: "/api/chat/route",
   });
 
   return (
@@ -22,7 +22,7 @@ export default function MyComponent() {
 
       <form onSubmit={handleSubmit} className="mt-4">
         <label className="block text-gray-700 text-sm font-bold mb-2">
-          Write here ...
+          Please input your question here and our trained model will try to answer you ...
           <input
             value={input}
             onChange={handleInputChange}

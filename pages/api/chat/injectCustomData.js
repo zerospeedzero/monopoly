@@ -4,7 +4,7 @@ import { supabase } from "@/utils/supabase";
 import { ChatCompletionRequestMessage } from "openai-edge";
 
 export const injectCustomData = async (
-  {messages}
+  messages
 ) => {
   const lastMessage = messages.pop();
   if (!lastMessage) {
@@ -20,8 +20,8 @@ export const injectCustomData = async (
   const [{ embedding }] = embeddingResponse.data;
   const { data: documents } = await supabase.rpc("match_documents", {
     query_embedding: embedding,
-    match_threshold: 0.78, // Choose an appropriate threshold for your data
-    match_count: 10, // Choose the number of matches
+    match_threshold: 0.9, // Choose an appropriate threshold for your data
+    match_count: 2, // Choose the number of matches
   });
   let contextText = "";
   for (let i = 0; i < documents.length; i++) {
@@ -30,7 +30,7 @@ export const injectCustomData = async (
     contextText += `${content.trim()}---\n`;
   }
   const prompt = `
-        You are a representative that is very helpful when it comes to talking about SW Stock! Only ever answer
+        You are a representative that is very helpful when it comes to talking about Monopoly academic! Only ever answer
         truthfully and be as helpful as you can!"
         Context: ${contextText}
         Question: """
@@ -39,7 +39,7 @@ export const injectCustomData = async (
         Answer as simple text:
       `;
   return [
-    ...messages,
+    // ...messages,
     {
       role: "user",
       content: prompt,
