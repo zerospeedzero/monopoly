@@ -1,6 +1,4 @@
 import React from 'react'
-// import {motion} from 'framer-motion'
-
 const Introduction = () => {
   return (
     <div className='h-screen w-screen flex flex-col justify-center items-center'

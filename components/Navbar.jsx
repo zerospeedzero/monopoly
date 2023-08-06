@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import React, {useState, useEffect} from 'react';
-// import {AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-// import * as gtag from "../lib/gtag"
 import Vectary from "@/components/Vectary"
 import Image from 'next/image'
 import Banner from '@/components/Banner'
@@ -13,7 +11,6 @@ const Navbar = () => {
   const [textColor, setTextColor] = useState('white');
   const [url, setUrl] = useState('');
   const changePath = (url) => {
-    // gtag.pageview(url);
     console.log(url);
   }
   const handleNav = () => {
@@ -47,7 +44,7 @@ const Navbar = () => {
                 initial={{scale:0, opacity: 1}} animate={{scale:1, opacity:1}} transition={{type: 'spring',duration: 2, delay: 4.5}}     
             >
               <li className='p-4 font-bold'>
-                <Link href='/' scroll={false} onClick={()=>changePath('/home')}>Home</Link>
+                <Link href='/' scroll={false} onClick={()=>changePath('/home')}><img src="icon_Greenhouses.png" alt="icon" height="40" width="40" /></Link>
               </li>
               <li className='p-4 font-bold'>
                 <Link href='/modules' scroll={false} onClick={()=>changePath('/modules')}>Modules</Link>
@@ -59,7 +56,7 @@ const Navbar = () => {
                 <Link href='/pratice' scroll={false} onClick={()=>changePath('/practice')}>Practice</Link>
               </li>
               <li className='p-4 font-bold'>
-                <Link href='/gpt' scroll={false} onClick={()=>changePath('/gpt')}>GPT</Link>
+                <Link href='/gpt' scroll={false} onClick={()=>changePath('/gpt')}><img src="icon_bubble.png" alt="icon" height="40" width="40"/></Link>
               </li>
             </motion.ul>
           </div>

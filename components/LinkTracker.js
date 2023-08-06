@@ -1,5 +1,3 @@
-// linkTracker.js
-
 // Function to check if a link has been visited or not
 export function isLinkVisited(link) {
   const visitedLinks = JSON.parse(localStorage.getItem('visitedLinks')) || [];

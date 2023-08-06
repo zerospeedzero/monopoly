@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* <script src="https://www.youtube.com/player_api"/> */}
       </Head> 
       <body>
         <div className="fixed top-[90px] left-0 right-0 bottom-0 flex justify-center items-center z-[-10]">

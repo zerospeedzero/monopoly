@@ -41,7 +41,7 @@ export default function Quizzes() {
             <div className='flex text-black'>
                 <Link  href={"/module/variations/3/quiz/variations"} class='tick-icon'
                 >
-                  <Module item={data.variations[3]} index={3}
+                  <Module item={data.variations[1]} index={1}
                     isLinkVisited={isLinkVisited("/module/variations/3/quiz/variations")}
                   />            
                 </Link>

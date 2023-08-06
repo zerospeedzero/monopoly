@@ -7,10 +7,15 @@ const fetcher = (key) => fetch(key).then((res) => res.json())
 
 const Slide = ({level, index, slide_name, link}) => {
   const [topic, setTopic] = useState(null)
-  // const url = process.env.NEXT_PUBLIC_MODULE_DATA_URL
+  const [account, setAccount] = useState(null)
   const url =  '/moduleData.json'
   const {data, error, isLoading} = useSWR(url, fetcher)
   console.log(slide_name)
+  console.log(level)
+  useEffect(()=> {
+    if (level == 'tactics') {setAccount("wowwewow")}
+    if (level == 'variations') {setAccount("bigmoist")}
+  }, [])
   return (
     <>
       {isLoading ? (
@@ -24,7 +29,7 @@ const Slide = ({level, index, slide_name, link}) => {
                 <Link href="/modules" onClick={()=>markLinkAsVisited(link)}>     
                   <span className={'absolute top-0 right-1 w-[5rem] bg-red-500 text-white text-center  p-2 rounded-lg hover:bg-yellow-300 hover:text-black hover:shadow-lg'}>Return</span>
                 </Link>
-                <iframe src={"https://slides.com/wowwewow/" + slide_name + "/embed"}
+                <iframe src={"https://slides.com/" + account + "/" + slide_name + "/embed"}
                   className="w-full max-w-[1000px] aspect-video border-2 shadow-lg rounded-lg"
                   width="100%"
                   height="auto" 

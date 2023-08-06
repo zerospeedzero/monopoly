@@ -4,7 +4,6 @@ import {FaCheck} from 'react-icons/fa'
 import {easeIn, easeInOut, motion} from 'framer-motion'
 
 const Module = ({item, index, isLinkVisited}) => {
-  // console.log(item)
   return (
     <div className='bg-yellow-200 flex flex-col items-center w-[300px] h-[350px] m-4 border-1 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:bg-green-400'>
        <div className="relative w-[300px] h-4/5  board-image flex flex-row justify-center items-center">

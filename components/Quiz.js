@@ -19,33 +19,16 @@ const Page = ({module, link}) => {
     correctAnswers: 0,
     wrongAnswers: 0,
   });
-  // const url =  process.env.NEXT_PUBLIC_QUIZ_DATA_URL
   const url =  '/quizData_' + module + '.json'
   const {data, error, isLoading} = useSWR(url, fetcher)
-  console.log(module)
-  console.log(link)
-  // useEffect(() => {
-  //   if (data != undefined) {
-  //     const { questions } = data;
-  //     const { question, answers, correctAnswer, qimage, sequence } = questions[activeQuestion];
-  //   }
-  // }, data)
-
   //   Select and check answer
   const onAnswerSelected = (answer, idx) => {
     setChecked(true);
     setSelectedAnswerIndex(idx);
-    // console.log(idx)
-    // console.log(data.questions)
-    // console.log(activeQuestion)
-    // console.log(data.questions[activeQuestion].answer)
-    // console.log(data.questions[activeQuestion].correctAnswer)
     if (answer === data.questions[activeQuestion].correctAnswer) {
       setSelectedAnswer(true);
-      // console.log('true');
     } else {
       setSelectedAnswer(false);
-      // console.log('false');
     }
   };
 
@@ -67,7 +50,6 @@ const Page = ({module, link}) => {
     if (activeQuestion !== data.questions.length - 1) {
       setActiveQuestion((prev) => prev + 1);
     } else {
-      // setActiveQuestion(0);
       console.log(result.correctAnswers)
       console.log(data.totalQuestions)
       if (result.correctAnswers >= data.totalQuestions - 1)

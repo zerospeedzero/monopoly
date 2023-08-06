@@ -6,15 +6,7 @@ import Quiz from '@/components/Quiz'
 
 const Detail = () => {
   const router = useRouter()
-  // console.log(router.pathname)
-  // console.log(router.asPath)
   const [data, setData] = useState([])
-  // let { alias } = router.query
-  // const [level, index, type] = (alias == undefined || !alias.includes('-')) ? ['beginner', '0']: alias.split("-")
-  // const [level, index, type, resource_name] = alias
-  // setData(router.query.alias) 
-
-
   return (
     <>
       {router.query.alias != undefined && router.query.alias[2] == 'video' ? (

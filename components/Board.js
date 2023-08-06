@@ -1,6 +1,4 @@
 import React from 'react'
-// import '../styles/board.css'
-
 const Board = () => {
   return (
     <div>

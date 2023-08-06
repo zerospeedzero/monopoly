@@ -1,34 +1,16 @@
-// import moduleData from '@/components/moduleData.json'
 import Module from '@/components/Module'
 import useSWR from 'swr'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-// const visited = isLinkVisited(link);
 import { isLinkVisited, markLinkAsVisited } from '@/components/LinkTracker';
 
 
 const fetcher = (key) => fetch(key).then((res) => res.json())
 
 export default function Modules() {
-  // const url =  process.env.NEXT_PUBLIC_MODULE_DATA_URL
   const url =  '/moduleData.json'
   const {data, error, isLoading} = useSWR(url, fetcher)
-  // const visited = isLinkVisited(link);
-  // console.log(isLoading)
-  // console.log(data)
-  // console.log(error)
-  // useEffect(()=> {
-  //   const statusLinks = document.querySelectorAll('a.tick-icon');
-  //   statusLinks.forEach(link => {
-  //     const computedStyles = window.getComputedStyle(link);
-  //     if (computedStyles && computedStyles.color === 'rgb(0, 0, 255)') {
-  //       console.log(`${link.textContent} has been visited.`);
-  //     }
-  //   });
-  // },[])
   const handleClick = (link,type) => {
-    // if (type != 'quiz')
-    //   markLinkAsVisited(link);
   };
 
   const module_link = (level, module, index) => {
