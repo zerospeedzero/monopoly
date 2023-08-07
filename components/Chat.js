@@ -8,7 +8,8 @@ export default function MyComponent() {
   });
 
   return (
-    <div className="bg-gray-100 h-[calc(100vh-200px)] p-8 overflow-y-scroll flex flex-col justify-end rounded shadow-md m-auto w-full">
+    <div className="relative bg-gray-100 h-[calc(100vh-200px)] p-8 overflow-y-scroll flex flex-col justify-end rounded shadow-md m-auto w-full">
+      <img className="absolute top-[10%] left-[20%]  opacity-20" src="icon_lightbulb.png"/>
       <ul className="space-y-2">
         {messages.map((m, index) => (
           <li key={index} className="p-2 rounded bg-white shadow text-gray-700">
