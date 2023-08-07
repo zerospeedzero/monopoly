@@ -1,5 +1,5 @@
 import React from 'react'
-import Practice from '@/components/practice'
+import Practice from '@/components/Practice'
 
 const practice = () => {
   return (
