@@ -32,8 +32,8 @@ export default function Modules() {
           <h2 className='p-4 text-3xl'>Beginner module</h2>
           <div className='flex flex-wrap justify-center text-black'>
             {data.beginner.map((module, index) => (
-              <div className='relative'>
-                <Link key={index} href={module_link('beginner', module, index)} class='tick-icon'
+              <div key={index} className='relative'>
+                <Link href={module_link('beginner', module, index)} class='tick-icon'
                   onClick={() => handleClick(module_link('beginner', module, index), module.type)}
                 >
                   <Module item={module} index={index}
@@ -49,8 +49,8 @@ export default function Modules() {
           <h2 className='p-4 text-3xl'>Tactics module</h2>
           <div className='flex flex-wrap justify-center text-black'>
             {data.tactics.map((module, index) => (
-              <div className='relative'> 
-                <Link key={index} href={module_link('tactics', module, index)} class='tick-icon'
+              <div key={index} className='relative'> 
+                <Link href={module_link('tactics', module, index)} class='tick-icon'
                   onClick={() => handleClick(module_link('tactics', module, index), module.type)}
                 >
                   <Module item={module} index={index}
@@ -66,7 +66,7 @@ export default function Modules() {
           <h2 className='p-4 text-3xl'>Variations of Monopoly</h2>
           <div className='flex flex-wrap justify-center text-black'>
             {data.variations.map((module, index) => (
-              <div className='relative'>
+              <div key={index} className='relative'>
                 <Link key={index} href={module_link('variations', module, index)} class='tick-icon'
                   onClick={() => handleClick(module_link('variations', module, index), module.type)}
                 >
