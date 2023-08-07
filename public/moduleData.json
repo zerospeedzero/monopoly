@@ -3,15 +3,15 @@
     { "name": "How to play",
       "type": "video",
       "profile": "icon_shoe.png",
-      "video_name": "4nz-_hvFw44",
+      "video_name": "oJCFB0EU-Os",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
       "jump_point": [
-        {"name": "Step 1 how to", "time": "72"},
-        {"name": "Step 2 how to", "time": "202"},
-        {"name": "Step 3 how to", "time": "312"},
-        {"name": "Step 4 how to", "time": "312"},
-        {"name": "Step 5 how to", "time": "312"},
-        {"name": "Step 6 how to", "time": "312"}
+        {"name": "Starting", "time": "23"},
+        {"name": "Gameplay", "time": "132"},
+        {"name": "Special Spaces", "time": "258"},
+        {"name": "Money Exchange", "time": "374"},
+        {"name": "Bankruptcy", "time": "447"},
+        {"name": "Ending", "time": "471"}
       ]
     },
     { "name": "Beginner quiz", 
