@@ -9,7 +9,7 @@
     },
     {
       "id": "2",
-      "question": "Which of these colors is it more likely to land on?",
+      "question": "Which of these colors is it most likely to land on?",
       "answers": ["Green", "Brown", "Teal", "Orange"],
       "correctAnswer": "Orange"
     },
@@ -41,7 +41,7 @@
       "id": "7",
       "question": "A property owner must ask for rent, if they don’t, you are not required to pay.",
       "answers": ["True", "False"],
-      "correctAnswer": "False"
+      "correctAnswer": "True"
     },
     {
       "id": "8",
@@ -51,15 +51,15 @@
     },
     {
       "id": "9",
-      "question": "Which of these colors is it more likely to land on?",
-      "answers": ["Blue", "Magenta", "Yellow", "Red"],
-      "correctAnswer": "Red"
+      "question": "Which of these colors is it most likely to land on?",
+      "answers": ["Blue", "Magenta", "Orange", "Red"],
+      "correctAnswer": "Orange"
     },
     {
       "id": "10",
-      "question": "Which of these colors is it more likely to land on?",
-      "answers": ["Red", "Orange", "A and B are correct", "Green"],
-      "correctAnswer": "A and B are correct"
+      "question": "Which of the following two colors are they more likely to land on?",
+      "answers": ["Red and Magenta", "Red and Orange", "Blue and Orange", "Orange and Green"],
+      "correctAnswer": "Red and Orange"
     }
   ]
 }
