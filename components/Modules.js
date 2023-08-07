@@ -17,7 +17,7 @@ export default function Modules() {
   const unlock = (prerequisite) => {
     if (passcode != 'britt') {setPasscode(''); return}
     markLinkAsVisited(prerequisite)
-    router.push('/modules')
+    router.push('/modules') 
   };
 
   const module_link = (level, module, index) => {
