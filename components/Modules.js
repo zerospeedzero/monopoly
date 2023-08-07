@@ -17,6 +17,11 @@ export default function Modules() {
   const module_link = (level, module, index) => {
     return ('/module/' + level + '/' +  index + "/" + module.type + "/" + module.video_name) 
   }
+  const locked = (prerequisite) => {
+    if (prerequisite == 'none') {return false}
+    console.log(prerequisite)
+    return !isLinkVisited(prerequisite);
+  }
 
   return (
     <>
@@ -35,32 +40,44 @@ export default function Modules() {
                     isLinkVisited={isLinkVisited(module_link('beginner', module, index))}
                   />            
                 </Link>
-                {/* <div className='h-[350px] w-[300px] mt-[1rem] mx-[1rem] bg-gray-400 opacity-80 absolute top-0 left-0 flex flex-col justify-center items-center'><FaLock className="text-gray-600" size={50}/></div> */}
+                { locked(module.prerequisite) &&
+                  <div className='h-[350px] w-[300px] mt-[1rem] mx-[1rem] bg-gray-400 opacity-80 absolute top-0 left-0 flex flex-col justify-center items-center'><FaLock className="text-gray-600" size={50}/></div>
+                }
               </div>
             ))}  
           </div>
           <h2 className='p-4 text-3xl'>Tactics module</h2>
           <div className='flex flex-wrap justify-center text-black'>
             {data.tactics.map((module, index) => (
-              <Link key={index} href={module_link('tactics', module, index)} class='tick-icon'
-                onClick={() => handleClick(module_link('tactics', module, index), module.type)}
-              >
-                <Module item={module} index={index}
-                  isLinkVisited={isLinkVisited(module_link('tactics', module, index))}
-                />            
-              </Link>
+              <div className='relative'> 
+                <Link key={index} href={module_link('tactics', module, index)} class='tick-icon'
+                  onClick={() => handleClick(module_link('tactics', module, index), module.type)}
+                >
+                  <Module item={module} index={index}
+                    isLinkVisited={isLinkVisited(module_link('tactics', module, index))}
+                  />            
+                </Link>
+                { locked(module.prerequisite) &&
+                  <div className='h-[350px] w-[300px] mt-[1rem] mx-[1rem] bg-gray-400 opacity-80 absolute top-0 left-0 flex flex-col justify-center items-center'><FaLock className="text-gray-600" size={50}/></div>
+                }
+              </div>
             ))}  
           </div>
           <h2 className='p-4 text-3xl'>Variations of Monopoly</h2>
           <div className='flex flex-wrap justify-center text-black'>
             {data.variations.map((module, index) => (
-              <Link key={index} href={module_link('variations', module, index)} class='tick-icon'
-                onClick={() => handleClick(module_link('variations', module, index), module.type)}
-              >
-                <Module item={module} index={index}
-                  isLinkVisited={isLinkVisited(module_link('variations', module, index))}
-                />            
-              </Link>
+              <div className='relative'>
+                <Link key={index} href={module_link('variations', module, index)} class='tick-icon'
+                  onClick={() => handleClick(module_link('variations', module, index), module.type)}
+                >
+                  <Module item={module} index={index}
+                    isLinkVisited={isLinkVisited(module_link('variations', module, index))}
+                  />            
+                </Link>
+                { locked(module.prerequisite) &&
+                  <div className='h-[350px] w-[300px] mt-[1rem] mx-[1rem] bg-gray-400 opacity-80 absolute top-0 left-0 flex flex-col justify-center items-center'><FaLock className="text-gray-600" size={50}/></div>
+                }
+              </div>
             ))}  
           </div>
         </div>

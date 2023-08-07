@@ -5,6 +5,7 @@
       "profile": "icon_shoe.png",
       "video_name": "oJCFB0EU-Os",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "prerequisite": "none",
       "jump_point": [
         {"name": "Starting", "time": "23"},
         {"name": "Gameplay", "time": "132"},
@@ -18,7 +19,8 @@
       "type": "quiz",
       "profile": "icon_dice.png",
       "video_name": "beginner",
-      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video"
+      "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "prerequisite": "/module/beginner/0/video/oJCFB0EU-Os"
     }
   ],
   "tactics": [
@@ -27,6 +29,7 @@
       "profile": "icon_iron.png",
       "video_name": "deck",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "prerequisite": "/module/beginner/1/quiz/beginner",
       "jump_point": [
         {"name": "Step 1 how to", "time": "72"},
         {"name": "Step 2 how to", "time": "202"},
@@ -38,6 +41,7 @@
       "profile": "icon_coins.png",
       "video_name": "palette",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "prerequisite": "/module/tactics/0/slide/deck",
       "jump_point": [
         {"name": "Step 1 how to", "time": "72"},
         {"name": "Step 2 how to", "time": "202"},
@@ -49,6 +53,7 @@
       "profile": "icon_ring.png",
       "video_name": "tactics",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "prerequisite": "/module/tactics/1/slide/palette",
       "jump_point": [
         {"name": "Step 1 how to", "time": "72"},
         {"name": "Step 2 how to", "time": "202"},
@@ -62,6 +67,7 @@
       "profile": "icon_cannon.png",
       "video_name": "palette",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "prerequisite": "/module/tactics/2/quiz/tactics",
       "jump_point": [
         {"name": "Step 1 how to", "time": "72"},
         {"name": "Step 2 how to", "time": "202"},
@@ -73,6 +79,7 @@
       "profile": "icon_ship.png",
       "video_name": "variations",
       "description": "The objective of this module is to enable previous no knowledge player can start playing Monopoly after complete this video",
+      "prerequisite": "/module/variations/0/slide/palette",
       "jump_point": [
         {"name": "Step 1 how to", "time": "72"},
         {"name": "Step 2 how to", "time": "202"},
