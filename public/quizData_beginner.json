@@ -5,7 +5,8 @@
       "id": "1",
       "question": "What is this card?",
       "answers": ["Community Chest Card", "Title Deed Card", "Chance Card", "Get out of Jail Card"],
-      "correctAnswer": "Chance Card"
+      "correctAnswer": "Chance Card",
+      "qimage": "chance.gif"
     },
     {
       "id": "2",
@@ -40,7 +41,7 @@
     {
       "id": "7",
       "question": "What happens when you pass Go?",
-      "answers": ["The bank will give you $200", "You go to Jail", "Give the player on the right $50", "Recieve a high-five"],
+      "answers": ["The bank will give you $200", "You go to Jail", "Give the player on the right $50", "Receive a high-five"],
       "correctAnswer": "The bank will give you $200"
     },
     {
@@ -77,7 +78,8 @@
       "id": "13",
       "question": "What is this card??",
       "answers": ["Community Chest Card", "Title Deed Card", "Get out of Jail Card", "Chance Card"],
-      "correctAnswer": "Get out of Jail Card"
+      "correctAnswer": "Get out of Jail Card",
+      "qimage": "get_out_of_jail.gif"
     },
     {
       "id": "14",
