@@ -53,7 +53,7 @@ export default function Quizzes() {
                 <Link  href={"/module/variations/3/quiz/variations"} class='tick-icon'
                 >
                   <Module item={data.variations[1]} index={1}
-                    isLinkVisited={isLinkVisited("/module/variations/3/quiz/variations")}
+                    isLinkVisited={isLinkVisited("/module/variations/1/quiz/variations")}
                   />            
                 </Link>
                 { islocked(data.variations[1].prerequisite) &&

@@ -52,7 +52,7 @@ const Page = ({module, link}) => {
     } else {
       console.log(result.correctAnswers)
       console.log(data.totalQuestions)
-      if (result.correctAnswers >= data.totalQuestions - 1)
+      if (((result.score / (5 * data.totalQuestions)) * 100).toFixed(2) > 70)
       {
           console.log('Pass!!')
           markLinkAsVisited(link)
@@ -140,6 +140,11 @@ const Page = ({module, link}) => {
                     <p>
                       Wrong Answers: <span>{result.wrongAnswers}</span>
                     </p>
+                    {((result.score / (5 * data.totalQuestions)) * 100).toFixed(2) > 70 ?
+                      <p>You pass!</p> 
+                    : (
+                      <p>You fail! Please try again</p>
+                    )}
                     <button className="w-[6rem] border-2 mt-4 py-2 px-4 bg-orange-300 mx-4" onClick={() =>{ setShowResult(false); setResult({score:0, correctAnswers:0, wrongAnswers:0}); setActiveQuestion(0) } }>Retry</button>
                     <Link href="/modules"><button className="w-[6rem] border-2 mt-4 py-2 px-4 bg-red-500 text-white mx-4">Return</button></Link>
                   </div>
