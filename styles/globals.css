@@ -14,10 +14,10 @@
 }
 /* h1, h2, h3, h4, h5, h6 {font-family: 'Josefin+Sans', 'Times New Roman', serif;} */
 body {font-family: 'Sen', Helvetica, sans-serif; background-color: rgba(203,203,203,1);}
-.custom-image {
+/* .custom-image {
   background-image: url('../public/banner1.png');
   background-repeat: no-repeat;
-}
+} */
 
 .board-image {
   background-image: url('../public/board_min.png');
