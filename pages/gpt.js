@@ -16,7 +16,7 @@ export default function Page() {
   } 
     
   return (
-    <div className="h-screen w-screen pt-[120px] flex flex-col items-center">
+    <div className="h-screen w-screen pt-[120px] flex flex-col items-center  bg-white/70 ">
       { islocked('/module/tactics/2/quiz/tactics') ? 
         <div className='bg-white mt-[200px] max-w-[40rem] p-4 flex flex-col justify-center items-center rounded-lg shadow-md opacity-90'>
           <h2 className='text-center text-3xl'>GPT is locked</h2>
@@ -26,6 +26,7 @@ export default function Page() {
       : (
         <div className="max-w-[60rem] mx-auto">
           <h2 className="text-center text-3xl p-8">Monopoly Academy embedding for GPT</h2>
+          <p className="text-center pb-4">Ask me anything about this website and i will answer you with our trained data.</p>
           <Chat />
         </div>
       )}

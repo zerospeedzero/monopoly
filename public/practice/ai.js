@@ -5,7 +5,7 @@ function AITest(p) {
 	// This variable is static, it is not related to each instance.
 	this.constructor.count++;
 
-	p.name = "AI Test " + this.constructor.count;
+	// p.name = "AI Test " + this.constructor.count;
 	p.name = "Danny";
 
 	// Decide whether to buy a property the AI landed on.
@@ -16,7 +16,7 @@ function AITest(p) {
 		console.log("buyProperty");
 		var s = square[index];
 
-		if (p.money > s.price + 50) {
+		if (p.money > s.price + 70) {
 			return true;
 		} else {
 			return false;

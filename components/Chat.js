@@ -8,8 +8,8 @@ export default function MyComponent() {
   });
 
   return (
-    <div className="relative bg-gray-100 h-[calc(100vh-200px)] p-8 overflow-y-scroll flex flex-col justify-end rounded shadow-md m-auto w-full">
-      <img className="absolute top-[10%] left-[20%]  opacity-20" src="icon_lightbulb.png"/>
+    <div className="relative bg-gray-100 h-[calc(100vh-300px)] p-8 overflow-y-scroll flex flex-col justify-end rounded shadow-md m-auto w-full">
+      <img className="absolute top-[10%] left-[20%]  opacity-20" src="icon_dice.png"/>
       <ul className="space-y-2">
         {messages.map((m, index) => (
           <li key={index} className="p-2 rounded bg-white shadow text-gray-700">
@@ -30,12 +30,19 @@ export default function MyComponent() {
             className="w-full p-2 mt-1 rounded border shadow-sm"
           />
         </label>
-        <button
-          type="submit"
-          className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-        >
-          Submit
-        </button>
+        <div className="flex flex-row justify-between">
+          <button
+            type="submit"
+            className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Submit
+          </button>
+          <a href="/train_data.html" target="_blank"
+            className="mt-2 bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Trained data
+          </a>
+        </div>
       </form>
     </div>
   );
